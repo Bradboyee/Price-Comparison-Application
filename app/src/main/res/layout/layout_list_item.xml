@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    android:layout_width="wrap_content"
+    android:layout_height="180dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/silver"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="0dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_late_gray"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="5dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/nunito_black"
+            android:maxLines="2"
+            android:text="Title"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/item_text_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topic"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/nunito_semi_bold"
+            android:text="Product : "
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/resulttext"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_text_score2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/nunito_black"
+            android:text="Result :"
+            android:textColor="@color/light_sea_green" />
+
+        <TextView
+            android:id="@+id/item_text_score2"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_text_score"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/nunito_semi_bold"
+            android:text="Product :"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/Aname"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_text_score"
+            android:layout_alignBottom="@+id/item_text_score"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/item_text_score"
+            android:fontFamily="@font/nunito_semi_bold"
+            android:text="A name"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/Bname"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Aname"
+            android:layout_alignStart="@+id/Aname"
+            android:layout_alignEnd="@+id/Aname"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/nunito_semi_bold"
+            android:text="B name"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/item_text_score6"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_text_score5"
+            android:layout_alignStart="@+id/item_text_score5"
+            android:layout_alignEnd="@+id/item_text_score5"
+            android:layout_marginStart="-2dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="2dp"
+            android:fontFamily="@font/nunito_semi_bold"
+            android:text="Size :"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/item_text_score5"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topic"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/Aname"
+            android:fontFamily="@font/nunito_semi_bold"
+            android:text="Size :"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/Sizea"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topic"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/item_text_score5"
+            android:fontFamily="@font/nunito_semi_bold"
+            android:text="Size :"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/sizeb"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_text_score5"
+            android:layout_alignStart="@+id/Sizea"
+            android:layout_alignEnd="@+id/Sizea"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/nunito_semi_bold"
+            android:text="Size :"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/item_text_score13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topic"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/Sizea"
+            android:fontFamily="@font/nunito_semi_bold"
+            android:text="Price : "
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/item_text_score14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_text_score13"
+            android:layout_alignStart="@+id/item_text_score13"
+            android:layout_alignEnd="@+id/item_text_score13"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/nunito_semi_bold"
+            android:text="Price : "
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/pricea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topic"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="1dp"
+            android:layout_toEndOf="@+id/item_text_score13"
+            android:fontFamily="@font/nunito_semi_bold"
+            android:text="PriceA"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/priceb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pricea"
+            android:layout_alignStart="@+id/pricea"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="1dp"
+            android:fontFamily="@font/nunito_semi_bold"
+            android:text="PriceB"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/resultedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sizeb"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/resulttext"
+            android:fontFamily="@font/nunito_black"
+            android:text="Result :"
+            android:textColor="@color/light_sea_green"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+</androidx.cardview.widget.CardView>
